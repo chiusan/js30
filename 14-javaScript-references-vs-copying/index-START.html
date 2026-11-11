@@ -49,6 +49,9 @@
     const team3 = [].concat(players);
 
     // or use the new ES6 Spread
+    const team4 = [...players];
+    team[3] = 'hi, hello';
+    console.log(team4);
 
     // now when we update it, the original one isn't changed
 
