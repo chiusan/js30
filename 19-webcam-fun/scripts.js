@@ -37,6 +37,7 @@ function takePhoto() {
   link.href = data;
   link.setAttribute('download', 'snap');
   link.textContent = 'Download Image';
+  link.innerHTML = `<img src="${data}" alt="snap">`;
   strip.insertBefore(link, strip.firstChild);
 }
 
