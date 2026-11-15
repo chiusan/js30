@@ -64,8 +64,20 @@
     const speed = document.querySelector('.speed-value');
 
     navigator.geolocation.watchPosition((data) => {
-      console.log(data);
-      speed.textContent = data.coords.speed;
+      console.log(data.coords);
+
+      const { speed: s, heading } = data.coords;
+
+      speed.textContent = s === null ? 0 : Math.round(s * 3.6);
+
+      if (heading !== null && !Number.isNaN(heading)) {
+        arrow.style.transform = `rotate(${heading}deg)`;
+      }
+    }, (err) => {
+      console.error(err);
+      alert('Error!' + err.message);
+    }, {
+      enableHighAccuracy: true
     });
   </script>
 </body>
