@@ -64,6 +64,13 @@
       if(!timeUP) peep();
     }, time);
   }
+
+  function startGame() {
+    scoreBoard.textContent = 0;
+    timeUP = false;
+    peep();
+    setTimeout(() => timeUP = true, 10000);
+  }
 </script>
 </body>
 </html>
