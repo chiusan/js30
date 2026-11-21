@@ -2,7 +2,7 @@
 
 30 Vanilla JS Challenge.
 
-view demo [here](https://chiusan.github.io/js30/)
+view demo [here](https://chiusan.github.io/js30/).
 
 1. [JavaScript Drum Kit](./01-javascript-drum-kit/)
 2. [JS and CSS Clock](./02-js-and-css-clock/)
