@@ -92,3 +92,23 @@ h3 {
   object-fit: cover;
   width: calc(100% + 2rem);
 }
+
+@media only screen and (max-width: 991px) {
+  .item {
+    width: calc(30% - 1rem);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 2em 1em;
+  }
+
+  .items {
+    padding: 1em;
+  }
+
+  .item {
+    width: 100%;
+  }
+}
